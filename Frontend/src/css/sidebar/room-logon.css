@@ -1,0 +1,27 @@
+#btn-create-room { background-color: #c5e1a5; }
+
+#btn-join-room { background-color: #4fc3f7; }
+
+#btn-generate-roomname {
+    background-color: #e9ff6b;
+    position: relative;
+}
+
+#view-logon .form {
+    display: flex;
+    flex-direction: column;
+}
+
+#view-logon .form div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#view-logon .form .input {
+    margin: 10px;
+}
+
+#view-logon .form .btn {
+    margin: 10px;
+}

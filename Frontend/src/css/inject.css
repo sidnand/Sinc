@@ -1,0 +1,21 @@
+#sidebar {
+    background: white;
+    height: 50%;
+    width: 400px;
+    position: fixed;
+    top: 25%;
+    border-radius: 10px;
+    transition: all 200ms ease-in-out;
+    right: -380px;
+    margin-right: 0px;
+    /* margin-right: 400px; */
+}
+
+#view-loading {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 35vh;
+}
+
+.spinner > div { background-color: #fff; }

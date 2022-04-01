@@ -1,0 +1,53 @@
+#hangout-room-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#hangout-room-header #header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: end;
+    flex-wrap: nowrap;
+}
+
+#hangout-room-header #header-left .btn:nth-child(1) { padding: 0; width: 40px; }
+
+#roomname {
+    font: 400 1em Open Sans;
+    color: #333;
+}
+
+#btn-leave-room {
+    background-color: #E57373;
+    color: #fff;
+    width: 70px;
+}
+
+#hangout-room-dashboard {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#hangout-room-dashboard h2 {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20%;
+}
+
+.member {
+    padding: 10px;
+}
+
+.member-mic {
+    padding: 10px;
+    color: #333;
+    font-size: 1.2em;
+}

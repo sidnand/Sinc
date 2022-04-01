@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/sidebar/universal-classes.css">
+    <link rel="stylesheet" href="css/sidebar/hangout-room.css">
+    <link rel="stylesheet" href="css/sidebar/room-logon.css">
+    <link rel="stylesheet" href="css/sidebar/settings.css">
+    <link rel="stylesheet" href="css/sidebar/main.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="view" id="view-loading">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div> <!-- END OF LOADIN SCREEM -->
+
+        <div class="view" id="view-error">
+            <h2>Unable to connect to our servers, please check your internet connection and reload the page</h2>
+        </div>
+
+        <div id="sidebar-notification"></div>
+
+        <div class="view" id="view-logon">
+            <div class="form">
+                <div>
+                    <input type="text" placeholder="Your name..." class="input" id="input-membername">
+                    <div>
+                        <input type="text" placeholder="Roomname..." class="input" id="input-roomname">
+                        <button class="btn tooltip" id="btn-generate-roomname">
+                            Generate
+                            <span class="tooltiptext tooltip-top">Creates a random roomname</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <button id="btn-create-room" class="btn">Create</button>
+                    <button id="btn-join-room" class="btn">Join</button>
+                </div>
+            </div>
+        </div> <!-- END OF ROOM LOGON -->
+
+        <div class="view" id="view-hangout">
+            <div id="hangout-room-header">
+                <div id="roomname"></div>
+                <div id="header-left">
+                    <button id="btn-mic" class="btn icon tooltip">
+                        <i class="fas fa-microphone"></i>
+                        <span class="tooltiptext tooltip-bottom">Please use headphones</span>
+                    </button>
+                    <button id="btn-leave-room" class="btn">Leave</button>
+                </div>
+            </div> <!-- END OF HEADER -->
+            
+            <div id="hangout-room-dashboard"></div> <!-- END OF DASHBOARD -->
+        </div> <!-- END OF HANGOUT AREA -->
+
+        <div id="footer">
+
+            <div id="blog-con">
+                <button class="btn" id="blog"><a href="https://sidnand.github.io/Sinc-Website/blog.html" target="_blank">Blog</a></button>
+            </div>
+
+            <div id="rating-con">
+                <button class="btn" id="rating"><a href="https://chrome.google.com/webstore/detail/sinc-watch-netflix-togeth/hpijhaededegbedhfnamnajebmhbdcla" target="_blank">Leave a Rating</a></button>
+            </div>
+
+            <div id="settings">
+                <div id="settings-menu">
+
+                    <!-- <div class="settings-option">
+                        <div class="settings-text">Dark Mode</div>
+                        <div class="settings-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="dark-mode">
+                                <span class="switch-nob"></span>
+                            </label>
+                        </div>
+                    </div> -->
+
+                    <!-- SHOW SIDEBAR ON FULLSCREEN VIDEO -->
+
+                    <div class="settings-option">
+                        <div class="settings-text">Show Sidebar In Fullscreen</div>
+                        <div class="settings-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="fullscreen-sidebar">
+                                <span class="switch-nob"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- CALLER VOLUME -->
+                    <div class="settings-option">
+                        <div class="settings-text" id="call-volume">Call Volume</div>
+                        <div class="settings-toggle">
+                            <div class="slider-container">
+                                <input type="range" min="0" max="100" class="slider" id="input-volume">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button id="btn-setting" class="btn icon"><i class="fas fa-cog"></i></button>
+            </div>
+        </div>
+
+    </div> <!-- END OF CONTAINER -->
+
+    <script src="https://kit.fontawesome.com/65dc67808d.js" crossorigin="anonymous"></script>
+
+    <script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.min.js"></script>
+    <script src="js/libs/socket.io.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/sidebar/variables.sidebar.js"></script>
+    <script src="js/sidebar/utility.sidebar.js"></script>
+    <script src="js/shared/utility.shared.js"></script>
+    <script src="js/sidebar/RTC/RTC.sidebar.js"></script>
+    <script src="js/sidebar/RTC/dataCommunication.sidebar.js"></script>
+    <script src="js/sidebar/RTC/audioCommunication.sidebar.js"></script>
+    <script src="js/sidebar/ui.sidebar.js"></script>
+    <script src="js/sidebar/settings.sidebar.js"></script>
+    <script src="js/sidebar/handleBackgroundMessage.sidebar.js"></script>
+    <script src="js/sidebar/handleContentScriptMessage.sidebar.js"></script>
+    <script src="js/sidebar/main.sidebar.js"></script>
+</body>
+</html>

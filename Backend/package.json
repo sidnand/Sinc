@@ -1,0 +1,17 @@
+{
+  "name": "sinc-server",
+  "version": "1.0.0",
+  "description": "watch anywhere. at anytime. with anyone",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Siddharth Nand <snand233@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chance": "*",
+    "mongoose": "*",
+    "rtcmulticonnection-server": "*",
+    "socketio": "*"
+  }
+}
