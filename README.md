@@ -2,7 +2,7 @@
 
 Sinc allows you and others to watch Netflix together. It offers a group call functionality so you can chat while watching.
 
-[Install](Sinc - Watch Netflix Together - Chrome Web Store]([Sinc - Watch Netflix Together - Chrome Web Store](https://chrome.google.com/webstore/detail/sinc-watch-netflix-togeth/hpijhaededegbedhfnamnajebmhbdcla))
+[Install](https://chrome.google.com/webstore/detail/sinc-watch-netflix-togeth/hpijhaededegbedhfnamnajebmhbdcla)
 
 WHAT'S NEW - VERSION 1.4 🎉
 
